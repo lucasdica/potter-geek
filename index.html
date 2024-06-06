@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Potter Geek</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1 class="text-center p-2 fs-3 mb-3">Potter Geek</h1>
+    <div class="container-fluid d-flex justify-content-around h-100">
+        <div class="misProductos">
+            <p class="titulos">Mis Productos:</p>
+            <div class="d-flex flex-wrap gap-2" id="productos">
+                <div class="cards-productos">
+                    <div class="card-nombre">
+                        <p class="nombre-producto">Mate 3D Harry Potter</p>
+                    </div>
+                    <div class="card-imagen">
+                        <img src="https://acdn.mitiendanube.com/stores/806/999/products/mate-3d-harry-potter1-d30a0623dd92b10e5c15932224147165-1024-1024.webp" alt="">
+                    </div>
+                    <div class="card-precio">
+                        <p class="precio-producto">$8.899</p>
+                    </div>
+                </div>
+
+                <div class="cards-productos">
+                    <div class="card-nombre">
+                        <p class="nombre-producto">Pulsera Reliquias Harry Potter</p>
+                    </div>
+                    <div class="card-imagen">
+                        <img src="https://acdn.mitiendanube.com/stores/806/999/products/pulsera-harry-potter-hp-reliquias-de-la-muerte-hedwig-lechuza-snitch-fotocaja-tienda-geek-11-5036bc2d698424806f15555263333075-1024-1024.webp" alt="">
+                    </div>
+                    <div class="card-precio">
+                        <p class="precio-producto">$5.499</p>
+                    </div>
+                </div>
+
+                <div class="cards-productos">
+                    <div class="card-nombre">
+                        <p class="nombre-producto">Llavero Harry Potter Hogwarts</p>
+                    </div>
+                    <div class="card-imagen">
+                        <img src="https://acdn.mitiendanube.com/stores/806/999/products/img_6159-copiar1-45aae6cfe91b0c1da115399080829347-1024-1024.webp" alt="">
+                    </div>
+                    <div class="card-precio">
+                        <p class="precio-producto">$4.999</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cargarProductos">
+            <p class="titulos">Agregar Producto:</p>
+            <form action="" id="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required>
+                
+                <label for="precio">Precio:</label>
+                <input type="text" name="precio" id="precio" required>
+
+                <label for="imagen">Imagen:</label>
+                <input type="url" name="imagen" id="imagen" required>
+
+                <div class="botones d-flex justify-content-around">
+                    <input type="submit" value="Enviar" id="btn-enviar" class="btn btn-primary">
+
+                    <input type="button" value="Limpiar" id="btn-limpiar" class="btn btn-light">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
